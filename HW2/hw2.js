@@ -4,6 +4,10 @@ var $todoList = $("#todo-list"), $newItem = $("#newItem"),
 var $ESC_CODE = 27, $ENTER_CODE = 13;
 
 function addListItem(){
+
+  if ($("#newItem").val() === "")
+    return;
+
   $todoList.append("<li><input type=checkbox class=toggle /><span class=text>" + $("#newItem").val() 
       + "</span><button class=destroy></button></li>");
   $newItem.val("");
