@@ -1,24 +1,25 @@
 var Animal, Cat, Dog, Woodpecker, myCat, myDog, woodpecker;
 
-function getType(){
+function getType() {
+	
+	if (this.hasOwnProperty("sound")) {
+		
+		if (this.sound === "meow")
+			return "Cat";
 
-	if (this.__proto__ === Animal.prototype)
-		return "Animal";
+		if (this.sound === "Woof woof")
+			return "Dog";
 
-	if (this.__proto__ === Cat.prototype)
-		return "Cat";
 
-	if (this.__proto__ === Dog.prototype)
-		return "Dog";
-
-	if (this.__proto__ === Woodpecker.prototype)
-		return "Woodpecker";
+		if (this.sound === "knock knock")
+			return "Woodpecker";
+	}
 
 	return "Something else";
 }
 
 
-function Animal(age, name, sound, region) {
+function Animal(age, name, region, sound) {
 	this.age = age;
 	this.name = name;
 	this.sound = sound;
@@ -30,7 +31,9 @@ Animal.prototype.say = function() {
 	console.log(this.sound);
 }
 
-Cat = function (age, name, sound, region) {
+Cat = function (age, name, region) {
+	arguments[3] = "meow";
+	arguments.length++;
 	Animal.apply(this, arguments);
 	return this;
 }
@@ -41,7 +44,9 @@ Cat.prototype.goAway =  function() {
 	return this.name + " go away!"; 
 }
 
-Dog = function (age, name, sound, region) {
+Dog = function (age, name, region) {
+	arguments[3] = "Woof woof";
+	arguments.length++;
 	Animal.apply(this, arguments);
 	return this;
 }
@@ -51,7 +56,9 @@ Dog.prototype.goAway =  function() {
 	return this.name + " go away!"; 
 }
 
-Woodpecker = function (age, name, sound, region) {
+Woodpecker = function (age, name, region) {
+	arguments[3] = "knock knock";
+	arguments.length++;
 	Animal.apply(this, arguments);
 	return this;
 }
@@ -62,9 +69,9 @@ Woodpecker.prototype.goAway =  function() {
 }
 
 //Example of Usage
-myCat = new Cat(2, "Tyson", "meow", "region1");
-myDog = new Dog(3, "Snoop Dogg", "Woof woof", "region2");
-woodpecker = new Dog(3, "Woody", "knock knock", "region3");
+myCat = new Cat(2, "Tyson",  "region1");
+myDog = new Dog(3, "Snoop Dogg", "region2");
+woodpecker = new Woodpecker(1, "Woody","region3");
 
 myCat.say();
 console.log("this is " + getType.call(myCat));
