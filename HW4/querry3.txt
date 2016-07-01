@@ -1,4 +1,4 @@
-db.persons.update(
+db.myCollection.update(
 	
 	{ 
 		name: "Dusti Lemmond"

@@ -1,4 +1,4 @@
-db.persons.find(
+db.myCollection.find(
    {
       scores: {
                 $elemMatch: {
