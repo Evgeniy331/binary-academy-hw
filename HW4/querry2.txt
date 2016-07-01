@@ -1,0 +1,14 @@
+db.persons.aggregate(
+  {
+      $unwind: "$scores"
+  },
+  {
+     $match: 
+     {
+	     $and: [ 
+		     {'scores.score': {$gt: 90} },
+		     {'scores.type': "exam"}
+		   ]
+     }
+  }
+);
