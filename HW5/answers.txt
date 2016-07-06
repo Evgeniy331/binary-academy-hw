@@ -1,4 +1,4 @@
-0. https://github.com/AccForTest/Test-project
+﻿0. https://github.com/AccForTest/Test-project
 
 1. 1) git log master..develop-feature1 develop..develop-feature1 --no-merges --date-order --pretty=format:'%s - %an' --since="3 hours"
    выводит сообщения и автора всех коммитов из ветки develop-feature1, которые сделаны за последние 3 часа 
@@ -25,7 +25,7 @@
    Узнать краткий хеш тег нужного коммита
    git log -abbrev-commit
    
-   Применить следующую команду
+   Применить следующую команду с хешем нужного коммита
    git cherry-pick 1ad8c00
 
 3. 
