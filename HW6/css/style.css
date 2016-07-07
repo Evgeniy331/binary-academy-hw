@@ -41,6 +41,7 @@ header {
 .text {
 	text-transform: uppercase;
 	font-size: 25px;
+	font-weight: normal;
 }
 
 .main-content {
@@ -96,12 +97,10 @@ section {
 }
 
 .first-part ul {
-	width: 100%;
-	height: 100%;
 	margin: 0 auto;
-	padding-left: 8%;
-	padding-right: 8%;
 	padding-top: 1%;
+	width: 780px;
+	height: 100%;
 }
 
 .first-part li {
@@ -154,7 +153,6 @@ section {
 
 footer {
 	background: lightblue;
-	position: absolute;
 	height: 120px;
     width: 98%;
 	margin-left: 1%;
