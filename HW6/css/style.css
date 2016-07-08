@@ -21,7 +21,7 @@ header {
 
 .image-block {
 	float: left;
-	background: url(../images/icon.png);
+	background: url(../images/icon.png) #A4C2F4;;
 	width: 13%;
 	height: 100px;
 	border: 2px solid black;
@@ -36,6 +36,7 @@ header {
 	padding-left: 30px;
 	border: 2px solid black;
 	border-left: none;
+	overflow: hidden;
 }
 
 .text {
@@ -66,7 +67,6 @@ nav ul {
 }
 
 nav li {
-	text-align: left;
 	white-space: nowrap;
 	width: 100%;
 	height: 50px;
@@ -106,15 +106,22 @@ section {
 
 .first-part li {
 	float: left;
-    width: 200px;
-    height: 115px;
-    margin-left: 6%;
-    margin-bottom: 2%;
-    background: pink;
+	width: 200px;
+	height: 115px;
+	margin-left: 6%;
+	margin-bottom: 2%;
+	background: pink;
 	border: 2px solid black;
 	text-align: center;
-	padding: 1.5em 0;
 	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.li-content {
+	
+width: 100%;
 }
 
 .ribbon:after {
@@ -124,6 +131,8 @@ section {
     border-bottom: 2px solid black;
     -webkit-transform: translateY(-47px) translateX(-17px) rotate(36deg);
     position: absolute;
+    top: 24px;
+    left: 166px;
 }
 
 
@@ -134,11 +143,12 @@ section {
     border-bottom: 2px solid black;
     -webkit-transform: translateY(-56px) translateX(139px) rotate(36deg);
     position: absolute;
+    top: 24px;
+    left: 32px;
 }
 
 .second-part ul {
-	display: flex;
-    justify-content: center;
+	text-align: center;
 	padding-top: 25px;
 }
 
@@ -149,8 +159,16 @@ section {
 	background: pink;
 	margin-left: 1%;
 	border: 2px solid black;
-	padding: 1.5em 0;
 	padding-left: 15px;
+	overflow: hidden;
+}
+
+.second-part .li-content {
+	display: table-cell;
+    vertical-align: middle;
+    height: 130px;
+    text-align: left;
+    overflow: hidden;
 }
 
 footer {
@@ -160,6 +178,7 @@ footer {
 	margin-left: 1%;
 	border: 2px solid black;
 	border-top: none;
+	overflow: hidden;
 }
 
 footer ul {
@@ -176,6 +195,7 @@ footer li {
 	width: 33%;
 	line-height: 60px;
 	text-align: center;
+	overflow: hidden;
 }
 
 footer li:last-child {
@@ -188,4 +208,5 @@ footer li:last-child {
 	width: 100%;
 	height: 60px;
 	line-height: 60px;
+	overflow: hidden;
 }
