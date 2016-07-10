@@ -1,0 +1,485 @@
+.transition:not(:hover) {
+  transition: 3s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+body {
+	margin: 0;
+	font-family: verdana, sans-serif;
+	overflow-x: hidden;
+	min-width: 420px;
+}
+
+#animated {
+    animation-duration: 3s;
+	animation-name: slidein;
+}
+
+h1, h2, h3 {
+	font-family: 'Patrick Hand', cursive;	
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 2em;
+	color: #d42f2f;
+    font-family: 'Special Elite', cursive;
+	margin-bottom: 0;
+}
+
+h3 a {
+	color: #d42f2f;
+	text-decoration: none;
+}
+
+h3 a:hover {
+	text-decoration: underline;
+}
+
+h4 {
+	font-family: 'Dancing Script', cursive;
+	margin-top: 0;
+}
+
+p {
+	text-align: justify;
+	overflow: hidden;
+}
+
+.label {
+	float:  left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.red {
+	color: #d42f2f;
+}
+
+.f-left {
+	float: left;
+	margin-left: 0;
+}
+
+#tag {
+	font-family: 'Bangers', cursive;
+	position: absolute;
+	top: 190px;
+	left: 200px;
+	color: #d42f2f;
+	font-size: 2em;
+}
+
+#header-wrapper {
+	background-color: #ccee95;
+	box-shadow: 0px 8px 30px #333333;
+}
+
+header {
+	width: 1200px;
+	margin: 0px auto;
+	position: relative;
+}
+
+input[name="search"] {
+	outline: none;
+	position: absolute;
+	right: 100px;
+	width: 270px;
+	height: 28px;
+	border: 1px solid #008000;
+	margin-top: 50px;
+}
+
+
+a.search {
+	background: white;
+	position: absolute;
+	display: block;
+	top: 50px;
+	right: 69px;
+	border: 1px solid #008000;
+	background: url("../images/search_ic.png") no-repeat;
+	width: 31px;
+	height: 30px;
+	border-left: none;
+}
+
+.nav {
+	position: absolute;
+	right: 0px;
+	bottom: 30px;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	font-weight: bold;
+	border: 2px solid black;
+	background-color: #008000;
+	border-radius: 20px;
+	margin-right: 5px;
+	padding: 8px 25px;
+	list-style: none;
+	display: inline-block;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;;
+	line-height: 100%;
+}
+
+.nav li:hover {
+	background-color: #555555;
+}
+
+#logo {
+	float: left;
+	height: 250px;
+}
+
+#content-wrapper {
+	width: 1200px;
+	margin: 0px auto;
+	padding: 30px 0px 50px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+article {
+	clear: both;
+}
+
+figure {
+	float: right;
+	margin-top: 0px;
+}
+
+figure img {
+	width: 290px;
+	border: 5px solid #008000;
+	border-radius: 10px;
+
+}
+
+figure img.red-border {
+	border: 5px solid #d42f2f;
+	border-radius: 0;
+	box-shadow: 8px 8px 30px #333333;	
+}
+
+#footer-wrapper {
+	background-color: #ccee95;
+	box-shadow: 0px -8px 30px #333333;	
+}
+
+footer {
+	width: 1200px;
+	margin: 0px auto;
+	background-image: url("../images/logo_2_trns.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	height: 160px;
+	padding-bottom: 20px;
+}
+
+footer nav a,
+footer nav a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+footer nav a:hover {
+	text-decoration: underline;
+}
+
+footer nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+}
+
+footer nav ul li {
+	display: inline-block;
+	padding: 55px 5px 45px 5px;
+}
+
+#copyright {
+	font-size: 0.7em;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+	
+	body {
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+	}
+
+
+	input[name="search"] {
+		right: 80px;
+	}
+
+	a.search {
+		right: 49px;
+	}
+
+	.nav {
+		right: 30px;
+	}
+
+	#content-wrapper { 
+		box-sizing: border-box;
+		width: 90%;
+	}
+
+	figure img {
+		width: 250px;
+		height: auto;
+	}
+
+	footer {
+		width: 1050px;
+		background-position: 780px 0;
+	}
+
+	#tag {
+		font-size: 1.5em;
+	}
+
+}
+
+@media screen and (max-width: 1050px) {
+
+	header {
+		width: 100%;
+	}
+
+	input[name="search"] {
+		right: 80px;
+		width: 240px;
+	}
+
+	a.search {
+		right: 49px;
+	}
+
+	#logo {
+		height: 200px;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	.nav {
+		right: 30px;
+		bottom: 20px;
+	}
+
+	.nav li {
+		padding: 8px 15px;
+	}
+
+	#tag {
+		display: none;
+	}
+
+	figure img {
+		width: 200px;
+		height: auto;
+	}
+
+	footer {
+		width: 100%;
+		background-position: 585px 0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	
+	header {
+		width: 100%;
+		height: 200px;
+	}
+
+	#logo {
+		height: 150px;
+	}
+
+	input[name="search"] {
+		right: 38px;
+		width: 180px;
+	}
+
+	a.search {
+		right: 7px;
+	}
+
+	.nav {
+	    width: 100%;
+	    right: 0;
+	    bottom: 11px;
+	    text-align: center;
+	}
+
+	.nav li {
+		padding: 8px 8px;
+	}
+
+
+	footer {
+		width: 100%;
+		background-position: 0 0;
+	}
+
+	figure {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+	footer {
+		background: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	input[name="search"] {
+		width: 120px;
+		right: 51px;
+	}
+
+	a.search {
+		right: 20px;
+	}
+
+	figure img {
+		width: 150px;
+		height: auto;
+	}
+	
+	.nav {
+		bottom: 45px;
+		min-height: 40px;
+	}	
+
+	.nav ul {
+		width: 150px;
+		min-height: 23px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		right: 20px;
+		border: solid 1px #aaa;
+		background: #FAFAFA url(../images/icon-menu.png) no-repeat 10px 11px;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	}
+
+	.nav li:hover {
+		background: none;
+	}
+
+	.nav li {
+		border-radius: none;
+		background-color: white;
+		display: none; 
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+
+	.nav .current {
+		border-radius: 3px;
+		display: block; 
+	}
+
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px;
+		text-align: left;
+		color: #999;
+	}
+
+	.nav a:hover {
+		color: #000;
+	}
+
+	.nav .current {
+		background: none;
+		display: block;
+	}
+
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+ 
+	.nav ul:hover {
+		background-image: none;
+	}
+
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+
+	.nav ul:hover .current {
+		background: url(../images/icon-check.png) no-repeat 10px 7px;
+	}
+
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	.transition:not(:hover) {
+		transition: none;
+	}
+}
