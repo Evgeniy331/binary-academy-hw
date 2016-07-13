@@ -21,7 +21,7 @@ header {
 
 .image-block {
 	float: left;
-	background: url(../images/icon.png) #A4C2F4;;
+	background: url(../images/icon.png) #A4C2F4;
 	width: 13%;
 	height: 100px;
 	border: 2px solid black;
@@ -94,7 +94,7 @@ section {
 .second-part {
 	width: 100%;
 	height: 200px;
-	
+	display: table;
 }
 
 .first-part ul {
@@ -120,8 +120,7 @@ section {
 }
 
 .li-content {
-	
-width: 100%;
+	width: 100%;
 }
 
 .ribbon:after {
@@ -149,7 +148,10 @@ width: 100%;
 
 .second-part ul {
 	text-align: center;
-	padding-top: 25px;
+	height: 200px;
+	display: table-cell;  4
+	vertical-align: middle;
+	vertical-align: middle;
 }
 
 .second-part li {
