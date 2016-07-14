@@ -40,9 +40,6 @@ class ImprovedFighter extends Fighter {
 
 };
 
-let fighter = new Fighter("fighter1", 4, 400);
-let improvedFighter = new ImprovedFighter("fighter2", 3, 350);
-
 function fight(fighter, improvedFighter, ...points) {
 
 	let currPoint = 0;
@@ -73,4 +70,11 @@ function fight(fighter, improvedFighter, ...points) {
 
 }
 
-fight(fighter, improvedFighter, 23, 13, 45);
+
+//EXAMPLE OF USAGE
+let fighter = new Fighter("fighter1", 4, 400);
+let improvedFighter = new ImprovedFighter("fighter2", 3, 350);
+
+let points = [23, 13];
+
+fight(fighter, improvedFighter, ...points, 45);
