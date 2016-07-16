@@ -1,0 +1,22 @@
+{
+  "name": "bsa-tooling-task",
+  "version": "1.0.0",
+  "description": "Task for BSA Tooling and Modularity in JS lecture",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jacobator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobator/bsa-tooling-task"
+   },
+  "license": "MIT",
+  "devDependencies": {
+    "almond": "^0.3.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-requirejs": "^0.1.3"
+  }
+}
