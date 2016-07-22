@@ -1,0 +1,33 @@
+body {
+	min-width: 600px;
+}
+
+input#nameInput {
+	box-sizing: border-box;
+	width: 200px;
+}
+
+label {
+	text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+
+textarea {
+	box-sizing: border-box;
+	width:  200px;
+	display: block;
+	height: 30px;
+	margin-top: 5px;
+}
+
+button {
+	margin-left: 75px;
+	float:  left;
+	margin-top: 10px;
+}
+
+#messages {
+	margin-top: 50px;
+}
