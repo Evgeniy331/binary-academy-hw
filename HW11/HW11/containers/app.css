@@ -1,0 +1,28 @@
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+input {
+	box-sizing: border-box;
+	width: 175px;
+}
+
+.list-item {
+	float: left;
+	display: inline-block;
+    width: 175px;
+    overflow: hidden;
+}
+
+li {
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 15px;
+}
