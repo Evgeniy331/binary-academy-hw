@@ -3,7 +3,7 @@ let nextId = 1
 export function addUser(name) {
     ++nextId;
     const action = {
-        type: 'USER_ADD',
+        type: "USER_ADD",
         nextId,
         name
     };
@@ -12,16 +12,15 @@ export function addUser(name) {
 
 export function deleteUser(id) {
     const action = {
-        type: 'USER_DELETE',
+        type: "USER_DELETE",
         id
     };
     return action;
 }
 
 export function filter(filter) {
-    console.log("filter: " + filter);
     const action = {
-        type: 'USERS_FILTER',
+        type: "USERS_FILTER",
         filter
     };
     return action;

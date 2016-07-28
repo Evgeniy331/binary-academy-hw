@@ -31,7 +31,6 @@ function updateVisibleUsers(users, filter) {
     else 
         {
         for (let i = 0; i < users.length; i++) {
-            console.log("name: " + users[i].name);
             if (users[i].name.toUpperCase().indexOf(filter.toUpperCase()) === 0)
                 visibleUsers.push(users[i]);
         }
@@ -52,7 +51,8 @@ export default function patentDetailsReducer(state = initialState, action) {
              return Object.assign({}, state, {
                 users: state.users,
                 visibleUsers: updateVisibleUsers(state.users, filter),
-                filter: filter
+                filter: filter,
+                currUserInList: state.currUserInList
             })
         }
        
@@ -66,7 +66,8 @@ export default function patentDetailsReducer(state = initialState, action) {
             return Object.assign({}, state, {
                 users: users,
                 visibleUsers: updateVisibleUsers(users, state.filter),
-                filter: state.filter
+                filter: state.filter,
+                currUserInList: state.currUserInList
             })
         }
 
@@ -80,7 +81,8 @@ export default function patentDetailsReducer(state = initialState, action) {
              return Object.assign({}, state, {
                 users: users,
                 visibleUsers: updateVisibleUsers(users, state.filter),
-                filter: state.filter
+                filter: state.filter,
+                currUserInList: state.currUserInList
             })
         }
 

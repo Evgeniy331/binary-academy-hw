@@ -12,9 +12,7 @@ import thunk from 'redux-thunk'
 
 import reducer from './components/reducers/users-list-reducer'
 
-const middleware = process.env.NODE_ENV === 'production' ?
-  [ thunk ] :
-  [ thunk, logger() ]
+const middleware = [ thunk ]
 
 const store = createStore(
   reducer,
