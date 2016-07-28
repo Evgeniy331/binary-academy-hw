@@ -7,13 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/oleksandrkovalov/bsa-2016-react-demo.git"
-  },
   "author": "Evgeniy Dubrovskiy",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/oleksandrkovalov/bsa-2016-react-demo#readme",
   "dependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.11.4",
