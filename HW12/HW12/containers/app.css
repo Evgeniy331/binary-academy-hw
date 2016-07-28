@@ -15,6 +15,7 @@ input {
 }
 
 input[name=filter] {
+	width: 230px;
 	margin-top: 10px;
 }
 

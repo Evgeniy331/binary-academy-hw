@@ -7,10 +7,7 @@ export default class Filter extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.filterUsers.bind(this)}>
-                <input name="filter" type="text" placeholder="User name" ref="filterInput" />
-                <button>Filter</button>
-            </form>
+            <input onKeyUp={this.filterUsers.bind(this)} name="filter" type="text" placeholder="Filter" ref="filterInput" />
         );
     }
 
